@@ -1,0 +1,184 @@
+/* register.css - Specific styles for the Register component */
+
+/* Register Card - slightly larger */
+.register-card {
+  max-width: 480px;
+}
+
+/* Face Registration Styles */
+.face-registration {
+  margin-top: 10px;
+}
+
+.face-capture-container {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f5f7fa;
+  margin-top: 10px;
+  border: 1px dashed #ddd;
+  transition: all 0.3s ease;
+}
+
+.face-capture-container:hover {
+  border-color: #6e8efb;
+}
+
+/* Capture Options */
+.capture-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.capture-options button {
+  margin-bottom: 15px;
+  min-width: 150px;
+}
+
+.or-divider {
+  display: block;
+  position: relative;
+  margin: 15px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.or-divider:before,
+.or-divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.or-divider:before {
+  right: calc(100% + 10px);
+}
+
+.or-divider:after {
+  left: calc(100% + 10px);
+}
+
+/* File Upload */
+.file-upload-label {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #f2f2f2;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+.file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Camera Container */
+.camera-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.camera-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #222;
+}
+
+.camera-container button {
+  margin-bottom: 10px;
+}
+
+.btn-capture {
+  position: relative;
+  padding: 10px 24px;
+  background: linear-gradient(to right, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+}
+
+.btn-capture:hover {
+  background: linear-gradient(to right, #5a7df4, #9361d8);
+  box-shadow: 0 6px 12px rgba(110, 142, 251, 0.4);
+}
+
+.btn-capture:before {
+  content: "📸";
+  margin-right: 8px;
+}
+
+/* Face Preview */
+.face-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.face-preview {
+  width: 70%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+}
+
+/* Password Requirements */
+.password-requirements {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+  
+  .capture-options button {
+    min-width: 120px;
+  }
+  
+  .or-divider:before,
+  .or-divider:after {
+    width: 20px;
+  }
+  
+  .face-preview {
+    width: 85%;
+  }
+}

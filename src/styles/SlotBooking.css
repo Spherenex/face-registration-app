@@ -1,0 +1,352 @@
+/* SlotBooking.css */
+.slot-booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.slot-booking-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+.slot-booking-title {
+  font-size: 28px;
+  color: #1a3c34;
+  margin: 0;
+}
+
+/* Message Styles */
+.message {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Match Selection */
+.match-selection-title {
+  font-size: 24px;
+  color: #1a3c34;
+  margin-bottom: 20px;
+}
+
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.match-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.match-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.match-card.selected {
+  border-color: #28a745;
+  background-color: #e6f4ea;
+}
+
+.match-date {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a3c34;
+}
+
+.match-title {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+/* Seat Selection */
+.seat-selection {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seat-selection-title {
+  font-size: 22px;
+  color: #1a3c34;
+  margin-bottom: 12px;
+}
+
+.seat-price {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.seat {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.seat:hover {
+  background-color: #e9ecef;
+}
+
+.seat.selected {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.seat.unavailable {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat-number {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.seat-status {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.seat-selection-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.selected-seats {
+  font-size: 16px;
+  color: #1a3c34;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Booking Confirmation */
+.booking-confirmation {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-title {
+  font-size: 24px;
+  color: #1a3c34;
+  margin-bottom: 20px;
+}
+
+.confirmation-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-card {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.detail-title {
+  font-size: 18px;
+  color: #1a3c34;
+  margin-bottom: 12px;
+}
+
+.detail-item {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.detail-item strong {
+  color: #1a3c34;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a3c34;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Booking Success */
+.booking-success {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  font-size: 48px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.success-heading {
+  font-size: 24px;
+  color: #1a3c34;
+  margin-bottom: 16px;
+}
+
+.success-message {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+.confirmation-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a3c34;
+  margin-bottom: 12px;
+}
+
+.success-email {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slot-booking-container {
+    padding: 15px;
+  }
+
+  .slot-booking-title {
+    font-size: 24px;
+  }
+
+  .matches-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .seats-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+
+  .confirmation-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .slot-booking-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+}
