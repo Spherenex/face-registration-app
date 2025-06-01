@@ -1,5 +1,362 @@
 /* src/styles/Dashboard.css */
 
+/* Dashboard.css */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.welcome-header {
+  margin-bottom: 30px;
+}
+
+.welcome-header h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.welcome-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.dashboard-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* User Profile Card */
+.user-profile .profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Booked Slots Card */
+.slots-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.booked-slot-item {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.booked-slot-item:last-child {
+  margin-bottom: 0;
+}
+
+.booking-details > div {
+  margin-bottom: 8px;
+}
+
+.booking-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.booking-date,
+.booking-seats,
+.booking-confirmation {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Payment Success Message */
+.payment-success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Transfer Success Message */
+.transfer-success-message {
+  background-color: #cce5ff;
+  color: #004085;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Payment Status */
+.booking-status {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-completed, 
+.transfer-completed {
+  display: flex;
+  align-items: center;
+  color: #28a745;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.payment-completed svg, 
+.transfer-completed svg {
+  margin-right: 6px;
+}
+
+.transfer-completed {
+  color: #007bff;
+}
+
+.payment-pending {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.btn-pay-now {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-pay-now:hover {
+  background-color: #218838;
+}
+
+.btn-pay-now:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.btn-pay-now svg {
+  margin-right: 6px;
+}
+
+/* Transfer Ticket */
+.transfer-ticket {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-transfer {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-transfer:hover {
+  background-color: #0069d9;
+}
+
+.btn-transfer:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.btn-transfer svg {
+  margin-right: 6px;
+}
+
+/* Notifications Card */
+.notifications-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-badge {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-book {
+  margin-top: 10px;
+}
+
+.btn-view-all {
+  margin-top: auto;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+.loading-bookings {
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.no-slots-message {
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image {
+    margin: 0 auto 15px;
+  }
+  
+  .payment-pending {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn-pay-now {
+    width: 100%;
+  }
+  
+  .btn-transfer {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dashboard-container {
   max-width: 1200px;
   margin: 0 auto;
